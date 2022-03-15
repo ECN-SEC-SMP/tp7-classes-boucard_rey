@@ -42,3 +42,12 @@ void Point::translater(Point Pt){
   this->abs += Pt.GetAbs();
   this->ord += Pt.GetOrd();
 }
+
+void Point::operator+=(const Point& P){
+  abs += P.abs;
+  ord += P.ord;
+}
+ostream& operator<<(ostream& s, const Point& P){
+  s << "Abscisse : " << P.abs << "  Ordonnée : " << P.ord;
+  return s;
+}
