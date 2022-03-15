@@ -3,6 +3,7 @@
 using namespace std;
 
 #include "Point.h"
+#include "Forme.h"
 
 int main() {
   cout << "Debut" << endl;
@@ -22,6 +23,11 @@ int main() {
 
   cout << PtR << endl;
 
+  Forme F(PtR);
+  cout << F << endl;
+  Forme G(PtN);
+  F += G;
+  cout << F << endl;
 
   // PtR.SetAbs(4.8);
   // PtR.SetOrd(5.2);
