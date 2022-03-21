@@ -18,7 +18,7 @@ Point::Point(float x, float y){
 float Point::GetAbs(){
    return this->abs;
 }
-float Point::GetOrd(){
+float Point::GetOrd(){ 
    return this->ord;
 }
 void Point::SetAbs(float x){

@@ -4,6 +4,8 @@ using namespace std;
 
 #include "Point.h"
 #include "Forme.h"
+#include "Cercle.h"
+#include "Rectangle.h"
 
 int main() {
   cout << "Debut" << endl;
@@ -13,21 +15,24 @@ int main() {
 
   Point PtN(2.2, 1.7);
 
-  PtR += PtN;
+  // PtR += PtN;
   
   
   // cout << Pt.GetAbs()<< endl;
   // cout << Pt.GetOrd()<< endl;
-  cout << PtR.GetAbs()<< endl; 
-  cout << PtR.GetOrd()<< endl; 
+  // cout << PtR.GetAbs()<< endl; 
+  // cout << PtR.GetOrd()<< endl; 
 
-  cout << PtR << endl;
+  // cout << PtR << endl;
 
-  Forme F(PtR);
-  cout << F << endl;
-  Forme G(PtN);
-  F += G;
-  cout << F << endl;
+  // Forme F(PtR);
+  // cout << F << endl;
+  // Forme G(PtN);
+  // F += G;
+  // cout << F << endl;
+
+  Cercle C(1.5,PtN);
+  cout << C << endl;
 
   // PtR.SetAbs(4.8);
   // PtR.SetOrd(5.2);
@@ -47,5 +52,8 @@ int main() {
   // cout << PtR.GetAbs()<< endl; 
   // cout << PtR.GetOrd()<< endl;
 
+
+  Rectangle R(8, 4, PtN);
+  cout << R;
   
 }
