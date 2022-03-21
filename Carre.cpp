@@ -3,13 +3,13 @@ using namespace std;
 
 #include "Carre.h"
 
-Carre::Carre(Point P) : Forme(P) {
+Carre::Carre(Point P) : Rectangle(P) {
   largeur = 1;
   longueur = 1;
 }
 
 
-Carre::Carre(float _l,Point P) : Forme(P){
+Carre::Carre(float _l,Point P) : Rectangle(P){
   largeur = _l;
   longueur = _l;
 }
@@ -34,6 +34,6 @@ float Carre::Perimetre(){
 
 
 ostream& operator<<(ostream& os, const Carre& Ca){
-  os << "Rectangle centré en : " << Ca.P << endl << " de coté: " << Ca.largeur << endl;
+  os << "Carré centré en : " << Ca.P << endl << " de coté: " << Ca.largeur << endl;
   return os;
 }

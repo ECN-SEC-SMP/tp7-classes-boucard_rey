@@ -6,6 +6,7 @@ using namespace std;
 #include "Forme.h"
 #include "Cercle.h"
 #include "Rectangle.h"
+#include "Carre.h"
 
 int main() {
   cout << "Debut" << endl;
@@ -55,5 +56,8 @@ int main() {
 
   Rectangle R(8, 4, PtN);
   cout << R;
+
+  Carre Car(5, PtN);
+  cout << Car;
   
 }
